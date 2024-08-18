@@ -1,3 +1,4 @@
 # midm-release
 > mi动漫发布页
-官网下载：https://midm.top
+
+官网：https://midm.top
