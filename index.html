@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi动漫官网 - 免费动漫软件 - 动漫资源丰富</title>
-    <meta name="keywords" content="Mi动漫, mi动漫官网, mi动漫下载, 免费动漫软件, 高清动漫, 动漫资源, 动漫导航,midm" />
+    <title>Mi动漫官网 - 免费动漫软件 - 最新版下载</title>
+    <meta name="keywords" content="Mi动漫, mi动漫官网, mi动漫下载,mi动漫最新版, 免费动漫软件, 高清动漫, 动漫资源, 动漫导航,midm" />
     <meta name="description" content="Mi动漫是一款免费观看高清动漫的软件，资源丰富，支持多主题颜色，收藏番剧更新提醒，自动保存历史记录等。体验最佳动漫观赏体验，就在Mi动漫！" />
     <meta itemprop="name" content="Mi动漫">
     <meta property="og:site_name" content="Mi动漫">
-    <meta property="og:title" content="Mi动漫官网 - 高清动漫免费资源">
+    <meta property="og:title" content="Mi动漫官网- 高清动漫免费资源">
     <meta property="og:description" content="Mi动漫，为您提供免费高清动漫资源，支持多种功能如主题切换、收藏提醒、自动保存历史等，轻松观看您喜欢的番剧！">
     <meta property="og:locale" content="zh_CN">
     <meta property="og:type" content="website">
@@ -69,7 +69,8 @@
             font-size: 24px;
             margin-bottom: 15px;
         }
-        .download-buttons{
+
+        .download-buttons {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
@@ -119,6 +120,34 @@
             .ewm {
                 display: none;
             }
+        }
+
+        /* 默认背景色 */
+        .mdui-panel-item {
+            background-color: #1e3c72;
+            /* 默认背景色 */
+            color: #e0e0e0;
+            /* 文字颜色 */
+            transition: background-color 0.3s;
+            /* 背景色变化时添加过渡效果 */
+        }
+
+        /* 点击时的背景色变化 */
+        .mdui-panel-item .mdui-panel-item-header:active {
+            background-color: #3e58a3;
+            /* 点击时的背景色 */
+        }
+
+        .mdui-panel-item .mdui-panel-item-header {
+            color: white;
+        }
+
+        .mdui-panel-item .mdui-panel-item-body {
+            color: #e0e0e0;
+        }
+
+        .mdui-panel-item .mdui-panel-item-arrow {
+            color: white;
         }
 
         .mdui-timeline {
@@ -171,20 +200,33 @@
             width: 2px;
             background-color: #e0e0e0;
         }
+         /* 自定义对话框的背景色 */
+         .mdui-dialog {
+            background-color: #1e3c72; /* 比 body 色稍深 */
+            color: #fff;
+        }
+
+        .mdui-dialog-actions .mdui-btn {
+            background-color: #1e3c72; /* 按钮背景色 */
+        }
+        .mdui-dialog-content{
+            color: #fff;
+        }
     </style>
 
 </head>
 
 <body class="mdui-container-fluid mdui-center">
-
+    <!-- app信息 -->
     <div class="mdui-container mdui-p-y-4">
         <div class="mdui-text-center">
+            <!-- Logo -->
             <div class="app-logo">
                 <img src="https://i0.hdslb.com/bfs/article/e71acbd85c9fd01374ea273dacdcf15e526774833.png" alt="App Logo"
                     referrerpolicy="no-referrer">
             </div>
             <h1 class="mdui-typo-display-2 mdui-m-y-3">Mi动漫</h1>
-
+            <!-- 简介 -->
             <p class="mdui-typo-subheading mdui-m-b-3">
                 一款免费且无广告的动漫软件，免登录,界面美观，高清画质，资源丰富。支持多种主题颜色，收藏番剧更新提醒，缓存视频，投屏，自动保存浏览历史,播放记录等，更多功能等你探索！</p>
 
@@ -193,7 +235,7 @@
                     style="color:#ffc1c9;">github</a>&nbsp;&nbsp;&nbsp;&nbsp;
                 QQ群: <span style="color:#ffc1c9;">214088421</span></p>
 
-
+            <!-- 下载地址 -->
             <div class="mdui-container" style="margin-top: 20px;">
                 <h2 class="mdui-typo-title">Android 下载</h2>
                 <div class="download-buttons mdui-m-t-2">
@@ -204,15 +246,16 @@
                         class="btn">
                         <button class="mdui-btn mdui-btn-raised mdui-color-theme-accent ">线路2</button>
                     </a>
-                    <a href="https://www.123865.com/s/dbdqVv-v6Cjv" class="btn" >
-                        <button class="mdui-btn mdui-btn-raised mdui-color-theme-accent ">兼容版（适用模拟器以及部分安卓低版本）</button>
+                    <a href="https://www.123865.com/s/dbdqVv-h6Cjv" class="btn">
+                        <button class="mdui-btn mdui-btn-raised mdui-color-theme-accent ">安装失败可选（适用模拟器、低版本系统）</button>
                     </a>
 
                 </div>
                 <h2 class="mdui-typo-title mdui-m-t-4">iOS 下载</h2>
                 <p class="mdui-typo-body mdui-m-t-2 mdui-text-color-grey">敬请期待...</p>
             </div>
-            <div class="app-info mdui-m-t-5">
+            <!-- 软件介绍 -->
+            <div class="app-info mdui-m-t-5 ">
                 <p class="mdui-typo-title">App 功能介绍：</p>
                 <ul class="mdui-list">
                     <li class="mdui-list-item">首页左上角按钮切换主题色</li>
@@ -225,14 +268,251 @@
                     style="width: 100%;">
 
             </div>
+
         </div>
     </div>
-    <div class="ewm">
-        <p>手机扫码下载</p>
-        <img src="https://i0.hdslb.com/bfs/article/e2a26c3b1e2d3c7ee8be43f55a91275b526774833.png" alt="网站二维码"
-            referrerpolicy="no-referrer">
-    </div>
+    <!-- 常见问题解答 -->
+    <div class="mdui-container">
+        <h1 class="mdui-text-center">常见问题解答</h1>
+        <div class="mdui-panel" mdui-panel>
+            <div class="mdui-panel-item">
+                <div class="mdui-panel-item-header mdui-text-color-theme">
+                    📱 软件功能说明
+                    <i class="mdui-panel-item-arrow mdui-icon material-icons">expand_more</i>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p>● 搜索记录、视频浏览记录和播放记录：这些数据都保存在本地，如果你清除了软件数据或卸载了软件，这些记录也会被清空哦~💔</p>
+                    <p>● 番剧收藏：番剧收藏是存储在云端的，还提供番剧更新邮件通知功能哦~📩</p>
+                    <p>● 主题切换：点击首页左上角按钮可以切换应用主题。</p>
+                </div>
+            </div>
 
+            <div class="mdui-panel-item">
+                <div class="mdui-panel-item-header">
+                    安装失败
+                    <i class="mdui-panel-item-arrow mdui-icon material-icons">expand_more</i>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p>如果您并非从官网下载安装此软件，可能存在被恶意修改的风险。为了确保您的安全，建议您从本页面重新下载最新版本哦！</p>
+                    <p>若在安装过程中出现“安卓包解析失败”问题，您可以尝试点击第三个下载按钮，以获取兼容旧版本的安装包。</p>
+                    <p>如果安装时提示报毒，可以选择将本应用标记为可信任应用，或在断开网络的情况下完成安装。💬✨</p>
+                </div>
+            </div>
+
+            <div class="mdui-panel-item">
+                <div class="mdui-panel-item-header">
+                    注册或番剧更新未收到邮件？
+                    <i class="mdui-panel-item-arrow mdui-icon material-icons">expand_more</i>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p>🔍 请先检查垃圾箱，或者把邮箱 admin@carole.top 添加到白名单中哦~</p>
+                </div>
+            </div>
+
+
+            <div class="mdui-panel-item">
+                <div class="mdui-panel-item-header">
+                    软件连接异常？
+                    <i class="mdui-panel-item-arrow mdui-icon material-icons">expand_more</i>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p>🚫 可检查版本是否最新，官网下载更新：midm1.com。部分地区可能会被拦截（比如河南移动、江苏、福建），建议更换其他地区卡试试，或者开启加速器访问。</p>
+                </div>
+            </div>
+
+
+            <div class="mdui-panel-item">
+                <div class="mdui-panel-item-header">
+                    视频播放失败或卡顿？
+                    <i class="mdui-panel-item-arrow mdui-icon material-icons">expand_more</i>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p>💡 你可以点击“重试”或者切换线路来播放视频。如果你在国外，可能会被拦截，建议使用香港或国内网络哦~ 如果播放卡顿，建议下载到本地观看，效果会更好！</p>
+                </div>
+            </div>
+
+
+            <div class="mdui-panel-item">
+                <div class="mdui-panel-item-header">
+                    视频资源模糊？
+                    <i class="mdui-panel-item-arrow mdui-icon material-icons">expand_more</i>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p>👀 默认情况下，如果你下载了某集视频，播放时会自动先获取本地下载的视频哦~ 所以切换线路时看到的都是同一个画质的资源。如果需要更高清的画质，建议先查看哪个线路的画质最高，然后再下载~</p>
+                </div>
+            </div>
+
+
+            <div class="mdui-panel-item">
+                <div class="mdui-panel-item-header">
+                    未搜索到资源？
+                    <i class="mdui-panel-item-arrow mdui-icon material-icons">expand_more</i>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p>🔍 试着使用模糊搜索或别名进行查询吧！比如搜索《团子大家族第一季》时，可以试试搜索“团子”、“大家族”或“Clannad”哦~ 🌸</p>
+                </div>
+            </div>
+
+
+            <div class="mdui-panel-item">
+                <div class="mdui-panel-item-header">
+                    如何删除本地缓存的视频？
+                    <i class="mdui-panel-item-arrow mdui-icon material-icons">expand_more</i>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p>🗑️ 进入“我的 -
+                        离线缓存”页面，找到你想删除的视频分类，长按该分类后选择“删除”，即可删除该分类下的所有视频。如果只想删除某一集，请点击进入该分类，找到需要删除的那一集，点击该集后面的删除按钮即可哦~
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="mdui-panel-item">
+                <div class="mdui-panel-item-header">
+                    如何关闭浏览以及播放记录？
+                    <i class="mdui-panel-item-arrow mdui-icon material-icons">expand_more</i>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p>📩 进入“设置”页面，找到“浏览历史以及播放历史”，即可开启或者关闭记录。</p>
+                </div>
+            </div>
+
+
+            <div class="mdui-panel-item">
+                <div class="mdui-panel-item-header">
+                    软件的收藏上限是多少？
+                    <i class="mdui-panel-item-arrow mdui-icon material-icons">expand_more</i>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p>🌟 每个账号最多可以收藏 100 个番剧哦！如果想要收藏更多，可以删除一些已经追完的番剧，给新的番剧腾出空间吧~</p>
+                </div>
+            </div>
+
+
+            <div class="mdui-panel-item">
+                <div class="mdui-panel-item-header">
+                    忘记密码？
+                    <i class="mdui-panel-item-arrow mdui-icon material-icons">expand_more</i>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p>🔑 不用担心！只需点击登录，然后选择找回密码，按照提示输入相关信息，即可轻松找回密码~</p>
+                </div>
+            </div>
+
+
+            <div class="mdui-panel-item">
+                <div class="mdui-panel-item-header">
+                    账号封禁？
+                    <i class="mdui-panel-item-arrow mdui-icon material-icons">expand_more</i>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p>🚫 请遵守软件使用规则，避免发送恶意评论以及非法使用哦。账号一旦封禁，暂时不支持解除，请珍惜账号使用权~</p>
+                </div>
+            </div>
+
+
+            <div class="mdui-panel-item">
+                <div class="mdui-panel-item-header">
+                    请求频繁？
+                    <i class="mdui-panel-item-arrow mdui-icon material-icons">expand_more</i>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p>⏳ 为了防止恶意攻击，系统对请求频率做了一些限制。如果你遇到此提示，请稍后再试，或者切换网络访问吧~</p>
+                </div>
+            </div>
+
+
+            <div class="mdui-panel-item">
+                <div class="mdui-panel-item-header">
+                    播放视频自动跳过某部分或视频不完整？
+                    <i class="mdui-panel-item-arrow mdui-icon material-icons">expand_more</i>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p>🎬 由于视频是由多个文件组成的，下载过程中可能有部分文件未能下载成功。你可以尝试删除当前下载的视频，并重新下载哦～（建议下载时不要退出软件，以确保完整下载）</p>
+                </div>
+            </div>
+
+
+            <div class="mdui-panel-item">
+                <div class="mdui-panel-item-header">
+                    缓存视频存放路径？
+                    <i class="mdui-panel-item-arrow mdui-icon material-icons">expand_more</i>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p>📂 目前不支持修改视频的存储路径，缓存文件默认存储在私有路径 /data/user/0/com.midm.top/app_flutter/mi_video_cache/。此目录需要获取
+                        root
+                        权限才能查看，感谢理解哦。</p>
+                </div>
+            </div>
+
+
+            <div class="mdui-panel-item">
+                <div class="mdui-panel-item-header">
+                    更新安装失败？
+                    <i class="mdui-panel-item-arrow mdui-icon material-icons">expand_more</i>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p>🔄 如果遇到更新失败的情况，可以尝试卸载当前版本，然后前往我们的官网 midm1.com 重新下载安装哦～为了安全，建议大家只从官网获取软件，避免从其他来源下载，以免下载到被篡改的版本哦 ⚠️
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="mdui-panel-item">
+                <div class="mdui-panel-item-header">
+                    如何隐藏播放器底部进度条？
+                    <i class="mdui-panel-item-arrow mdui-icon material-icons">expand_more</i>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p>📊 进入“设置”页面，找到“播放器底部进度条”，将其设置为“隐藏”即可。</p>
+                </div>
+            </div>
+
+
+            <div class="mdui-panel-item">
+                <div class="mdui-panel-item-header">
+                    如何关闭番剧邮件通知？
+                    <i class="mdui-panel-item-arrow mdui-icon material-icons">expand_more</i>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p>📧 设置中可以关闭邮件通知哦~</p>
+                </div>
+            </div>
+
+
+            <div class="mdui-panel-item">
+                <div class="mdui-panel-item-header">
+                    如何取消软件默认字体？
+                    <i class="mdui-panel-item-arrow mdui-icon material-icons">expand_more</i>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p>📄 设置中可以关闭软件默认字体哦~</p>
+                </div>
+            </div>
+
+
+            <div class="mdui-panel-item">
+                <div class="mdui-panel-item-header">
+                    如何导出视频到本地？
+                    <i class="mdui-panel-item-arrow mdui-icon material-icons">expand_more</i>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p>📥 长按视频以选择导出到本地哦~</p>
+                </div>
+            </div>
+
+            <div class="mdui-panel-item">
+                <div class="mdui-panel-item-header">
+                    默认导出目录在哪儿？
+                    <i class="mdui-panel-item-arrow mdui-icon material-icons">expand_more</i>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p>📥 默认位置：/storage/emulated/0/Download/midm_app/cacheVideo/</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
     <!-- 版本更新历史 -->
 
     <div class="mdui-container mdui-m-t-5">
@@ -245,7 +525,8 @@
                     <div class="mdui-timeline-item-content">
                         <div class="mdui-typo mdui-timeline-item-title mdui-text-color-theme">版本 2.2.1</div>
                         <div class="mdui-timeline-item-time mdui-text-color-grey">2024-11-04 20:29:00</div>
-                        <div class="mdui-timeline-item-text">v2.2.1 更新说明：修复系统bug，为了维持服务器并继续为您提供优质服务上线了开屏广告。如果您觉得严重影响体验，可以在设置中关闭。
+                        <div class="mdui-timeline-item-text">v2.2.1
+                            更新说明：修复系统bug，为了维持服务器并继续为您提供优质服务上线了开屏广告。如果您觉得严重影响体验，可以在设置中关闭。
                         </div>
                     </div>
                 </div>
@@ -405,11 +686,52 @@
 
         </div>
     </div>
+
+    <!-- 宽屏显示本页面二维码 -->
+    <div class="ewm">
+        <p>手机扫码下载</p>
+        <img src="https://i0.hdslb.com/bfs/article/e2a26c3b1e2d3c7ee8be43f55a91275b526774833.png" alt="网站二维码"
+            referrerpolicy="no-referrer">
+    </div>
+    <!-- 底部 -->
+    <div class=" mdui-typo mdui-text-center mdui-bg-color-theme mdui-text-color-white mdui-p-a-2">
+        <span data-v-b1a7823b="">Copyright © 2023-2024 Mi动漫 All Rights Reserved.</span>
+    </div>
     <script>var _hmt = _hmt || []; !function () { var e = document.createElement("script"); e.referrerpolicy = "origin", e.src = "https://hm.baidu.com/hm.js?0beb914a8243aa811ee5c3364a4cd442"; var r = document.getElementsByTagName("script")[0]; r.parentNode.insertBefore(e, r) }();</script>
     <script>var _hmt = _hmt || []; !function () { var e = document.createElement("script"); e.src = "https://hm.baidu.com/hm.js?73291010701b4f253db69876613e045d"; var t = document.getElementsByTagName("script")[0]; t.parentNode.insertBefore(e, t) }();</script>
     <script>!function (t) { "use strict"; !function (e) { var r = window, c = document, s = t, a = "".concat("https:" === c.location.protocol ? "https://" : "http://", "sdk.51.la/js-sdk-pro.min.js"), n = c.createElement("script"), o = c.getElementsByTagName("script")[0]; n.type = "text/javascript", n.setAttribute("charset", "UTF-8"), n.async = !0, n.src = a, n.id = "LA_COLLECT", s.d = n; var i = function () { r.LA.ids.push(s) }; r.LA ? r.LA.ids && i() : (r.LA = t, r.LA.ids = [], i()), o.parentNode.insertBefore(n, o) }() }({ id: "3HHd43lfdc3syB3o", ck: "3HHd43lfdc3syB3o", hashMode: !0 });</script>
     <script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/mdui/1.0.2/js/mdui.min.js"
         type="application/javascript"></script>
+    <script>
+        /* // 显示公告对话框的函数
+        function showDialog() {
+            mdui.dialog({
+                title: '公告',
+                content: '欢迎使用本软件！感谢您的支持与反馈。如果您遇到任何问题，请随时联系我们。😊',
+                actions: [
+                    {
+                        text: '确定',
+                        onClick: function () {
+                            // 关闭对话框
+                            return true;
+                        }
+                    }
+                ]
+            });
+        }
+        // 检查mdui是否已加载，如果没有加载则动态引入
+        if (!window.mdui) {
+            var script = document.createElement('script');
+            script.src = './mdui.global.min.js';
+            // 等待 mdui 加载完毕后执行
+            script.onload = function () {
+                showDialog(); // 显示对话框
+            };
+            document.body.appendChild(script);
+        } else {
+            showDialog(); // mdui 已加载，直接显示对话框
+        } */
+    </script>
 </body>
 
 </html>
