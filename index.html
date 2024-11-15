@@ -33,13 +33,51 @@
             height: 0px;
         }
 
+        ::selection,
+        ::-moz-selection {
+            background: #ffc1c9;
+            color: #fff;
+        }
+
         p {
             line-height: 1.5;
         }
 
         body {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            background-image: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
             color: #fff;
+        }
+
+        .overlay1 {
+            position: fixed;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -8;
+        }
+
+        .overlay2 {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -8;
+            background-color: rgba(68, 68, 68, 0.4);
+            background-image: -webkit-linear-gradient(-410deg, rgba(68, 68, 68, 0.2) 20%, rgba(0, 0, 0, 0.4));
+            background-image: linear-gradient(140deg, rgba(68, 68, 68, 0.2) 20%, rgba(0, 0, 0, 0.4));
+        }
+
+        .overlay3 {
+            position: fixed;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -7;
+            background-image: linear-gradient(155deg, rgba(28, 53, 103, .60) 0%, rgba(37, 72, 141, .80) 100%);
+            backdrop-filter: blur(5px);
         }
 
         a {
@@ -124,7 +162,7 @@
 
         /* 默认背景色 */
         .mdui-panel-item {
-            background-color: #1e3c72;
+            background-color: #1e3b7255;
             /* 默认背景色 */
             color: #e0e0e0;
             /* 文字颜色 */
@@ -134,7 +172,7 @@
 
         /* 点击时的背景色变化 */
         .mdui-panel-item .mdui-panel-item-header:active {
-            background-color: #3e58a3;
+            background-color: #3e57a337;
             /* 点击时的背景色 */
         }
 
@@ -200,16 +238,20 @@
             width: 2px;
             background-color: #e0e0e0;
         }
-         /* 自定义对话框的背景色 */
-         .mdui-dialog {
-            background-color: #1e3c72; /* 比 body 色稍深 */
+
+        /* 自定义对话框的背景色 */
+        .mdui-dialog {
+            background-color: #1e3c72;
+            /* 比 body 色稍深 */
             color: #fff;
         }
 
         .mdui-dialog-actions .mdui-btn {
-            background-color: #1e3c72; /* 按钮背景色 */
+            background-color: #1e3c72;
+            /* 按钮背景色 */
         }
-        .mdui-dialog-content{
+
+        .mdui-dialog-content {
             color: #fff;
         }
     </style>
@@ -217,6 +259,9 @@
 </head>
 
 <body class="mdui-container-fluid mdui-center">
+    <div class="overlay1"></div>
+    <div class="overlay2"></div>
+    <div class="overlay3"></div>
     <!-- app信息 -->
     <div class="mdui-container mdui-p-y-4">
         <div class="mdui-text-center">
@@ -230,7 +275,7 @@
             <p class="mdui-typo-subheading mdui-m-b-3">
                 一款免费且无广告的动漫软件，免登录,界面美观，高清画质，资源丰富。支持多种主题颜色，收藏番剧更新提醒，缓存视频，投屏，自动保存浏览历史,播放记录等，更多功能等你探索！</p>
 
-            <p class="version">当前版本: <span style="color:#ffc1c9;">2.2.1 </span> &nbsp;&nbsp;&nbsp;&nbsp;永久发布页：<a
+            <p class="version">最新版本: <span style="color:#ffc1c9;">2.2.3 </span> &nbsp;&nbsp;&nbsp;&nbsp;永久发布页：<a
                     href="https://github.com/Carole007/midm-release"
                     style="color:#ffc1c9;">github</a>&nbsp;&nbsp;&nbsp;&nbsp;
                 QQ群: <span style="color:#ffc1c9;">214088421</span></p>
@@ -239,20 +284,34 @@
             <div class="mdui-container" style="margin-top: 20px;">
                 <h2 class="mdui-typo-title">Android 下载</h2>
                 <div class="download-buttons mdui-m-t-2">
-                    <a href="https://www.123865.com/s/dbdqVv-aqCjv" class="btn">
+                    <a href="https://midm1.com/app1.php" class="btn">
                         <button class="mdui-btn mdui-btn-raised mdui-color-theme-accent ">线路1</button>
                     </a>
-                    <a href="https://github.com/Carole007/midm-release/releases/download/2.2.1/Mi.2.2.1.apk"
+                    <a href="https://github.com/Carole007/midm-release/releases/download/2.2.3/Mi.2.2.3.apk"
                         class="btn">
                         <button class="mdui-btn mdui-btn-raised mdui-color-theme-accent ">线路2</button>
                     </a>
-                    <a href="https://www.123865.com/s/dbdqVv-h6Cjv" class="btn">
+                    <a href="https://midm1.com/app2.php" class="btn">
                         <button class="mdui-btn mdui-btn-raised mdui-color-theme-accent ">安装失败可选（适用模拟器、低版本系统）</button>
+                    </a>
+                </div>
+                <h2 class="mdui-typo-title mdui-m-t-4">iOS 下载(需自签)</h2>
+                <p class="mdui-typo-body mdui-m-t-2 " style="color: rgba(255,255,255,.60)">
+                    <span class="mdui-text-color-theme-accent">提示:</span> 签名可以试试
+                    TrollStore2（永不掉签）、爱思助手（七天有效）、牛蛙助手（一键续签）、Scarlet（免费企业签）或 Apple ID +
+                    Xcode，也可以选择其他更好的软件。详细教程可以搜一下百度或B站。
+                </p>
+                <div class="download-buttons mdui-m-t-2">
+
+                    <a href="https://midm1.com/app3_ipa.php" class="btn">
+                        <button class="mdui-btn mdui-btn-raised mdui-color-theme-accent ">线路1</button>
+                    </a>
+                    <a href="https://github.com/Carole007/midm-release/releases/download/2.2.3/Mi2.2.3.ipa"
+                        class="btn">
+                        <button class="mdui-btn mdui-btn-raised mdui-color-theme-accent ">线路2</button>
                     </a>
 
                 </div>
-                <h2 class="mdui-typo-title mdui-m-t-4">iOS 下载</h2>
-                <p class="mdui-typo-body mdui-m-t-2 mdui-text-color-grey">敬请期待...</p>
             </div>
             <!-- 软件介绍 -->
             <div class="app-info mdui-m-t-5 ">
@@ -523,6 +582,18 @@
                 <div class="mdui-timeline-item-header">
                     <div class="mdui-timeline-item-icon mdui-color-theme-accent"></div>
                     <div class="mdui-timeline-item-content">
+                        <div class="mdui-typo mdui-timeline-item-title mdui-text-color-theme">版本 2.2.3</div>
+                        <div class="mdui-timeline-item-time mdui-text-color-grey">2024-11-15 11:30:00</div>
+                        <div class="mdui-timeline-item-text">v2.2.3
+                            更新说明 ：优化视频解析算法、 🎬支持全屏播放时双击屏幕左右边缘，快速后退或快进 10 秒 ⏪⏩、修复其他已知 Bug 🐞、解决了 App 误报问题，并调整了包名 📦，⚠️ 重要提示：由于包名变更，旧版下载和浏览数据无法同步，非常抱歉给您带来不便 🙏。请尽快完成观看，因为旧版本可能会逐步停止服务。💡 同时，我们也推出了 iOS 版本，可在官网下载，欢迎体验！🍏 </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mdui-timeline-item">
+                <div class="mdui-timeline-item-header">
+                    <div class="mdui-timeline-item-icon mdui-color-theme-accent"></div>
+                    <div class="mdui-timeline-item-content">
                         <div class="mdui-typo mdui-timeline-item-title mdui-text-color-theme">版本 2.2.1</div>
                         <div class="mdui-timeline-item-time mdui-text-color-grey">2024-11-04 20:29:00</div>
                         <div class="mdui-timeline-item-text">v2.2.1
@@ -697,11 +768,57 @@
     <div class=" mdui-typo mdui-text-center mdui-bg-color-theme mdui-text-color-white mdui-p-a-2">
         <span data-v-b1a7823b="">Copyright © 2023-2024 Mi动漫 All Rights Reserved.</span>
     </div>
+
     <script>var _hmt = _hmt || []; !function () { var e = document.createElement("script"); e.referrerpolicy = "origin", e.src = "https://hm.baidu.com/hm.js?0beb914a8243aa811ee5c3364a4cd442"; var r = document.getElementsByTagName("script")[0]; r.parentNode.insertBefore(e, r) }();</script>
     <script>var _hmt = _hmt || []; !function () { var e = document.createElement("script"); e.src = "https://hm.baidu.com/hm.js?73291010701b4f253db69876613e045d"; var t = document.getElementsByTagName("script")[0]; t.parentNode.insertBefore(e, t) }();</script>
     <script>!function (t) { "use strict"; !function (e) { var r = window, c = document, s = t, a = "".concat("https:" === c.location.protocol ? "https://" : "http://", "sdk.51.la/js-sdk-pro.min.js"), n = c.createElement("script"), o = c.getElementsByTagName("script")[0]; n.type = "text/javascript", n.setAttribute("charset", "UTF-8"), n.async = !0, n.src = a, n.id = "LA_COLLECT", s.d = n; var i = function () { r.LA.ids.push(s) }; r.LA ? r.LA.ids && i() : (r.LA = t, r.LA.ids = [], i()), o.parentNode.insertBefore(n, o) }() }({ id: "3HHd43lfdc3syB3o", ck: "3HHd43lfdc3syB3o", hashMode: !0 });</script>
     <script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/mdui/1.0.2/js/mdui.min.js"
         type="application/javascript"></script>
+    <script>
+        var pcBgList = [
+            "https://i0.hdslb.com/bfs/article/1e12de273556ef8ae35f18a6985dcffa526774833.jpg",
+            "https://i0.hdslb.com/bfs/article/60619768f7916aac4c116280fba870ab526774833.jpg",
+            "https://i0.hdslb.com/bfs/article/df6aae025bd06a9ce2e3c85ca911d63b526774833.jpg", "https://i0.hdslb.com/bfs/article/55f1013c78cbd3b78340c32eb4794094526774833.jpg",
+            "https://i0.hdslb.com/bfs/article/3a21279d4f60725fb7ae3ec820ed7d3e526774833.jpg",
+            "https://i0.hdslb.com/bfs/article/d324333022b344dc5407d29f240ef998526774833.png",
+            "https://i0.hdslb.com/bfs/article/8c7090f9f0cf5234d31e43b8c1d7444f526774833.jpg", "https://i0.hdslb.com/bfs/article/2f70e1a47db41af48bced34f3095dcad526774833.jpg",
+        ];
+        var mobileBgList = [
+            "https://i0.hdslb.com/bfs/article/8f98e6b45339fa21138b4e1ed8a871c3526774833.jpg", "https://i0.hdslb.com/bfs/article/14060b85be9069b88cc5979e3d477a23526774833.jpg", "https://i0.hdslb.com/bfs/article/730620ded81dc12c8a4817d0c376feeb526774833.jpg", "https://i0.hdslb.com/bfs/article/60619768f7916aac4c116280fba870ab526774833.jpg", "https://i0.hdslb.com/bfs/article/90e6830519c165d52cdf9b57c4712709526774833.jpg"];
+
+        initBackgroundImage();
+        //每8秒换一次背景图
+        setInterval(initBackgroundImage, 1000 * 8);
+        function initBackgroundImage() {
+            let bgUrl = isMobile() ? mobileBgList[Math.random() * mobileBgList.length | 0] : pcBgList[Math.random() * pcBgList.length | 0];
+            const img = new Image();
+            img.crossOrigin = "Anonymous";
+            img.setAttribute("referrerpolicy", "no-referrer");
+            img.src = bgUrl;
+            // 图片加载完成后的处理
+            img.onload = function () {
+                // 创建 canvas 并绘制图片
+                const canvas = document.createElement("canvas");
+                canvas.width = img.width;
+                canvas.height = img.height;
+                const ctx = canvas.getContext("2d");
+                ctx.drawImage(img, 0, 0);
+                // 将 canvas 转为 data URL，并设置为背景
+                const dataURL = canvas.toDataURL();
+                document.querySelector(".overlay1").style.background = `url("${dataURL}") no-repeat center top/cover #1e3c72`;
+            };
+            img.onerror = function () {
+                console.error("图片加载失败");
+            };
+        }
+
+
+        // 判断是否为移动端设备
+        function isMobile() {
+            const userAgent = navigator.userAgent.toLowerCase();
+            return /mobile|android|iphone|ipad|ipod|windows phone/i.test(userAgent)
+        }
+    </script>
     <script>
         /* // 显示公告对话框的函数
         function showDialog() {
