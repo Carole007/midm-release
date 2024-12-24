@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi动漫官网 - 免费动漫软件 - 最新版下载</title>
-    <meta name="keywords" content="Mi动漫, mi动漫官网, mi动漫下载,mi动漫最新版, 免费动漫软件, 高清动漫, 动漫资源, 动漫导航,midm" />
+    <title>Mi动漫官网 - 免费看动漫软件 - 支持手机、电脑最新版下载</title>
+    <meta name="keywords" content="Mi动漫, mi动漫官网, mi动漫下载,mi动漫最新版,电脑看动漫,免费动漫软件, 高清动漫, 动漫资源, 动漫导航,midm" />
     <meta name="description" content="Mi动漫是一款免费观看高清动漫的软件，资源丰富，支持多主题颜色，收藏番剧更新提醒，自动保存历史记录等。体验最佳动漫观赏体验，就在Mi动漫！" />
     <meta itemprop="name" content="Mi动漫">
     <meta property="og:site_name" content="Mi动漫">
@@ -15,6 +15,10 @@
     <meta property="og:type" content="website">
     <meta name="referrer" content="no-referrer">
     <link rel="icon" href="./favicon.ico">
+    <link href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/Swiper/8.0.6/swiper-bundle.min.css" type="text/css"
+        rel="stylesheet" />
+    <script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/Swiper/8.0.6/swiper-bundle.min.js"
+        type="application/javascript"></script>
     <link href="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/mdui/1.0.2/css/mdui.min.css" type="text/css"
         rel="stylesheet" />
     <style>
@@ -22,6 +26,7 @@
             padding: 0;
             margin: 0;
             box-sizing: border-box;
+            transition: all 0.8s ease-in;
         }
 
         ::-webkit-scrollbar-thumb {
@@ -100,6 +105,14 @@
         .app-logo img {
             max-width: 80%;
             border-radius: 50%;
+        }
+
+        .app-logo img:hover {
+            transform: rotate(666turn);
+            transition-delay: 1s;
+            transition-property: all;
+            transition-duration: 59s;
+            transition-timing-function: cubic-bezier(.34, 0, .84, 1);
         }
 
 
@@ -254,6 +267,72 @@
         .mdui-dialog-content {
             color: #fff;
         }
+
+
+        .swiper {
+            width: 100%;
+            height: 400px;
+            margin: 20px 0;
+        }
+
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 8px;
+        }
+
+        .swiper-pagination-bullet {
+            background-color: #ccc;
+            /* 默认颜色 */
+            opacity: 0.7;
+            /* 默认透明度 */
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: #ffc1c9;
+            /* 激活时的颜色 */
+            opacity: 1;
+            /* 激活时不透明 */
+        }
+
+        /* 设置左右切换按钮颜色和样式 */
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #ffc1c9;
+            /* 设置按钮颜色 */
+            background-color: rgba(255, 255, 255, 0.3);
+            /* 添加背景色和透明度 */
+            border-radius: 50%;
+            /* 圆形按钮 */
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* 鼠标悬停时改变颜色 */
+        .swiper-button-next:hover,
+        .swiper-button-prev:hover {
+            background-color: #ffc1c9;
+            color: #fff;
+            /* 改变箭头颜色为白色 */
+        }
+
+        /* 隐藏默认箭头的背景 */
+        .swiper-button-next::after,
+        .swiper-button-prev::after {
+            font-size: 16px;
+            /* 调整箭头大小 */
+            font-weight: bold;
+        }
     </style>
 
 </head>
@@ -273,28 +352,51 @@
             <h1 class="mdui-typo-display-2 mdui-m-y-3">Mi动漫</h1>
             <!-- 简介 -->
             <p class="mdui-typo-subheading mdui-m-b-3">
-                一款免费且无广告的动漫软件，免登录,界面美观，高清画质，资源丰富。支持多种主题颜色，收藏番剧更新提醒，缓存视频，投屏，自动保存浏览历史,播放记录等，更多功能等你探索！</p>
+                一款免费好用的动漫软件，免登录,界面美观，高清画质，资源丰富。支持多种主题颜色，收藏番剧更新提醒，缓存视频，投屏，自动保存浏览历史,播放记录等，更多功能等你探索！</p>
 
-            <p class="version">最新版本: <span style="color:#ffc1c9;">2.2.3 </span> &nbsp;&nbsp;&nbsp;&nbsp;永久发布页：<a
-                    href="https://github.com/Carole007/midm-release"
+            <p class="version">最新版本: <span style="color:#ffc1c9;">2.3.1 </span> &nbsp;&nbsp;&nbsp;&nbsp;
+                域名：<a href="https://midm1.com" style="color:#ffc1c9;">midm1.com</a>、
+                <a href="https://midm.top" style="color:#ffc1c9;">midm.top</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                github发布页：<a href="https://github.com/Carole007/midm-release"
                     style="color:#ffc1c9;">github</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                QQ群: <span style="color:#ffc1c9;">214088421</span></p>
+                QQ群: <a
+                    href="https://qm.qq.com/cgi-bin/qm/qr?k=p1WgSwQJlV9GivS4QE0gMHSe16bsDCi-&jump_from=webapi&authKey=sZmGbO7ppsj6fLRRqV3kJDGUlTuTuIa1LvZ+wa6QP2FHeWjMyDKmlyqk1eDQQb+o"
+                    target="_blank"><span style="color:#ffc1c9;">214088421</span></a>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                tg频道：<a href="https://t.me/+6A6Ir-JcHL5kMWU9" target="_blank"><span
+                        style="color:#ffc1c9;">点我前往</span></a>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                q频道：<a href="https://pd.qq.com/s/6mhb08gr6" target="_blank"><span style="color:#ffc1c9;">点我前往</span></a>
+            </p>
+
 
             <!-- 下载地址 -->
             <div class="mdui-container" style="margin-top: 20px;">
+
+                <!-- 安卓下载 -->
                 <h2 class="mdui-typo-title">Android 下载</h2>
                 <div class="download-buttons mdui-m-t-2">
-                    <a href="https://midm1.com/app1.php" class="btn">
+                    <a href="./app1.php" class="btn">
                         <button class="mdui-btn mdui-btn-raised mdui-color-theme-accent ">线路1</button>
                     </a>
-                    <a href="https://github.com/Carole007/midm-release/releases/download/2.2.3/Mi.2.2.3.apk"
-                        class="btn">
-                        <button class="mdui-btn mdui-btn-raised mdui-color-theme-accent ">线路2</button>
-                    </a>
-                    <a href="https://midm1.com/app2.php" class="btn">
-                        <button class="mdui-btn mdui-btn-raised mdui-color-theme-accent ">安装失败可选（适用模拟器、低版本系统）</button>
+                    <a href="./app2.php" class="btn">
+                        <button class="mdui-btn mdui-btn-raised mdui-color-theme-accent ">模拟器、低版本系统下载</button>
                     </a>
                 </div>
+
+                <!-- PC下载 -->
+                <h2 class="mdui-typo-title mdui-m-t-4">PC版下载（需要会员）</h2>
+                <div class="download-buttons mdui-m-t-2">
+                    <a href="./app4_window.php" class="btn">
+                        <button class="mdui-btn mdui-btn-raised mdui-color-theme-accent ">window下载</button>
+                    </a>
+                    <a href="#" class="btn">
+                        <button class="mdui-btn mdui-btn-raised mdui-color-theme-accent ">Mac(敬请期待)</button>
+                    </a>
+                </div>
+
+                <!-- ios下载 -->
                 <h2 class="mdui-typo-title mdui-m-t-4">iOS 下载(需自签)</h2>
                 <p class="mdui-typo-body mdui-m-t-2 " style="color: rgba(255,255,255,.60)">
                     <span class="mdui-text-color-theme-accent">提示:</span> 签名可以试试
@@ -303,14 +405,22 @@
                 </p>
                 <div class="download-buttons mdui-m-t-2">
 
-                    <a href="https://midm1.com/app3_ipa.php" class="btn">
+                    <a href="./app3_ipa.php" class="btn">
                         <button class="mdui-btn mdui-btn-raised mdui-color-theme-accent ">线路1</button>
                     </a>
-                    <a href="https://github.com/Carole007/midm-release/releases/download/2.2.3/Mi2.2.3.ipa"
-                        class="btn">
+                    <a href="https://github.com/Carole007/midm-release/releases/download/2.3.1/Mi2.3.1.ipa" class="btn">
                         <button class="mdui-btn mdui-btn-raised mdui-color-theme-accent ">线路2</button>
                     </a>
 
+                </div>
+
+
+                <!-- 备用下载 -->
+                <h2 class="mdui-typo-title mdui-m-t-4">备用云盘下载（若上面都下载失败）</h2>
+                <div class="download-buttons mdui-m-t-2">
+                    <a href="https://www.123865.com/s/dbdqVv-P3Njv" class="btn">
+                        <button class="mdui-btn mdui-btn-raised mdui-color-theme-accent ">备用下载</button>
+                    </a>
                 </div>
             </div>
             <!-- 软件介绍 -->
@@ -323,9 +433,39 @@
                     <li class="mdui-list-item">视频缓存，离线观看</li>
                     <li class="mdui-list-item">收藏番剧云端同步，（更新时会有邮件通知）</li>
                 </ul>
-                <img src="https://i0.hdslb.com/bfs/article/87de0759189fd963568107127a6e6d4f526774833.jpg" alt="appinfo"
-                    style="width: 100%;">
+                <!-- Swiper 滚动展示 -->
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="https://i0.hdslb.com/bfs/article/87de0759189fd963568107127a6e6d4f526774833.jpg"
+                                alt="app界面预览">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://i0.hdslb.com/bfs/article/1f7f18f815b1d8879450fd955cc078ab526774833.png"
+                                alt="pc首页">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://i0.hdslb.com/bfs/article/2ec8efe83d33ccc79262e3a14a923fe3526774833.png"
+                                alt="pc画廊">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://i0.hdslb.com/bfs/article/a0789273f116e7a3022f08e63b365bd8526774833.png"
+                                alt="pc个人中心">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://i0.hdslb.com/bfs/article/88b33022416256d19e1d004af2f68f0b526774833.png"
+                                alt="pc详情页">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://i0.hdslb.com/bfs/article/4f30e62a6af513814868b1d52f0c4326526774833.png"
+                                alt="pc播放页">
+                        </div>
 
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
             </div>
 
         </div>
@@ -491,20 +631,6 @@
                 </div>
             </div>
 
-
-            <div class="mdui-panel-item">
-                <div class="mdui-panel-item-header">
-                    缓存视频存放路径？
-                    <i class="mdui-panel-item-arrow mdui-icon material-icons">expand_more</i>
-                </div>
-                <div class="mdui-panel-item-body">
-                    <p>📂 目前不支持修改视频的存储路径，缓存文件默认存储在私有路径 /data/user/0/com.midm.top/app_flutter/mi_video_cache/。此目录需要获取
-                        root
-                        权限才能查看，感谢理解哦。</p>
-                </div>
-            </div>
-
-
             <div class="mdui-panel-item">
                 <div class="mdui-panel-item-header">
                     更新安装失败？
@@ -578,6 +704,32 @@
         <h2 class="mdui-text-color-pink-accent mdui-typo-title mdui-text-center">软件版本历史</h2>
         <div class="mdui-timeline mdui-m-t-3">
 
+
+            <div class="mdui-timeline-item">
+                <div class="mdui-timeline-item-header">
+                    <div class="mdui-timeline-item-icon mdui-color-theme-accent"></div>
+                    <div class="mdui-timeline-item-content">
+                        <div class="mdui-typo mdui-timeline-item-title mdui-text-color-theme">版本 2.3.1</div>
+                        <div class="mdui-timeline-item-time mdui-text-color-grey">2024-12-14 22:16:00</div>
+                        <div class="mdui-timeline-item-text">v2.3.1
+                            更新说明 🎉：新增每日签到、赞助页观看激励广告可获得积分 🎁，会员免费兑换功能 💎，播放记录与收藏记录可搜索 🔍，搜索页面新增聚搜功能（不限资源搜索）📱，分类数据优化
+                            📊，系统排版优化，适配各种屏幕 📺，同时发布了PC端💻。修复系统已知bug🐞~</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mdui-timeline-item">
+                <div class="mdui-timeline-item-header">
+                    <div class="mdui-timeline-item-icon mdui-color-theme-accent"></div>
+                    <div class="mdui-timeline-item-content">
+                        <div class="mdui-typo mdui-timeline-item-title mdui-text-color-theme">版本 2.2.5</div>
+                        <div class="mdui-timeline-item-time mdui-text-color-grey">2024-12-02 06:00:00</div>
+                        <div class="mdui-timeline-item-text">v2.2.5
+                            更新说明 ：新增更多视频资源🎬，优化下载解析🚀，提升播放体验🎉，修复系统已知bug🐞~</div>
+                    </div>
+                </div>
+            </div>
+
             <div class="mdui-timeline-item">
                 <div class="mdui-timeline-item-header">
                     <div class="mdui-timeline-item-icon mdui-color-theme-accent"></div>
@@ -585,7 +737,9 @@
                         <div class="mdui-typo mdui-timeline-item-title mdui-text-color-theme">版本 2.2.3</div>
                         <div class="mdui-timeline-item-time mdui-text-color-grey">2024-11-15 11:30:00</div>
                         <div class="mdui-timeline-item-text">v2.2.3
-                            更新说明 ：优化视频解析算法、 🎬支持全屏播放时双击屏幕左右边缘，快速后退或快进 10 秒 ⏪⏩、修复其他已知 Bug 🐞、解决了 App 误报问题，并调整了包名 📦，⚠️ 重要提示：由于包名变更，旧版下载和浏览数据无法同步，非常抱歉给您带来不便 🙏。请尽快完成观看，因为旧版本可能会逐步停止服务。💡 同时，我们也推出了 iOS 版本，可在官网下载，欢迎体验！🍏 </div>
+                            更新说明 ：优化视频解析算法、 🎬支持全屏播放时双击屏幕左右边缘，快速后退或快进 10 秒 ⏪⏩、修复其他已知 Bug 🐞、解决了 App 误报问题，并调整了包名 📦，⚠️
+                            重要提示：由于包名变更，旧版下载和浏览数据无法同步，非常抱歉给您带来不便 🙏。请尽快完成观看，因为旧版本可能会逐步停止服务。💡 同时，我们也推出了 iOS
+                            版本，可在官网下载，欢迎体验！🍏 </div>
                     </div>
                 </div>
             </div>
@@ -772,6 +926,23 @@
     <script>var _hmt = _hmt || []; !function () { var e = document.createElement("script"); e.referrerpolicy = "origin", e.src = "https://hm.baidu.com/hm.js?0beb914a8243aa811ee5c3364a4cd442"; var r = document.getElementsByTagName("script")[0]; r.parentNode.insertBefore(e, r) }();</script>
     <script>var _hmt = _hmt || []; !function () { var e = document.createElement("script"); e.src = "https://hm.baidu.com/hm.js?73291010701b4f253db69876613e045d"; var t = document.getElementsByTagName("script")[0]; t.parentNode.insertBefore(e, t) }();</script>
     <script>!function (t) { "use strict"; !function (e) { var r = window, c = document, s = t, a = "".concat("https:" === c.location.protocol ? "https://" : "http://", "sdk.51.la/js-sdk-pro.min.js"), n = c.createElement("script"), o = c.getElementsByTagName("script")[0]; n.type = "text/javascript", n.setAttribute("charset", "UTF-8"), n.async = !0, n.src = a, n.id = "LA_COLLECT", s.d = n; var i = function () { r.LA.ids.push(s) }; r.LA ? r.LA.ids && i() : (r.LA = t, r.LA.ids = [], i()), o.parentNode.insertBefore(n, o) }() }({ id: "3HHd43lfdc3syB3o", ck: "3HHd43lfdc3syB3o", hashMode: !0 });</script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
     <script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/mdui/1.0.2/js/mdui.min.js"
         type="application/javascript"></script>
     <script>
