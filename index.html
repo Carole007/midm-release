@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="zh-CN">
 
@@ -269,6 +268,11 @@
             color: #fff;
         }
 
+        .mdui-dialog {
+            border-radius: 16px;
+            /* 设置圆角 */
+        }
+
 
         .swiper {
             width: 100%;
@@ -355,16 +359,16 @@
             <p class="mdui-typo-subheading mdui-m-b-3">
                 一款免费好用的动漫软件，免登录,界面美观，高清画质，资源丰富。支持多种主题颜色，收藏番剧更新提醒，缓存视频，投屏，自动保存浏览历史,播放记录等，更多功能等你探索！</p>
 
-            <p class="version">最新版本: <span style="color:#ffc1c9;">2.3.2 （2025-02-21 00:30）</span> &nbsp;&nbsp;&nbsp;&nbsp;
-                域名：<a href="https://midm1.com" style="color:#ffc1c9;">midm1.com</a>、
-                <a href="https://midm.top" style="color:#ffc1c9;">midm.top</a>
+            <p class="version">最新版本: <span style="color:#ffc1c9;">2.3.2 （2025-02-21 00:30）</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                域名： <a href="https://midm.app" style="color:#ffc1c9;">midm.app</a>、
+                <a href="https://midm1.com" style="color:#ffc1c9;">midm1.com</a>
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 github发布页：<a href="https://github.com/Carole007/midm-release"
                     style="color:#ffc1c9;">github</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                
-                tg频道：<a href="https://t.me/midmgf" target="_blank"><span
-                        style="color:#ffc1c9;">midmgf</span></a>
-                
+
+                tg频道：<a href="https://t.me/midmgf" target="_blank"><span style="color:#ffc1c9;">midmgf</span></a>
+
             </p>
 
 
@@ -372,12 +376,12 @@
             <div class="mdui-container" style="margin-top: 20px;">
 
                 <!-- 安卓下载 -->
-                <h2 class="mdui-typo-title">Android 下载</h2>
+                <h2 class="mdui-typo-title">安卓手机下载</h2>
                 <div class="download-buttons mdui-m-t-2">
-                    <a href="./app1.php" class="btn">
+                    <a href="./app.php?key=apk1" class="btn">
                         <button class="mdui-btn mdui-btn-raised mdui-color-theme-accent ">线路1</button>
                     </a>
-                    <a href="./app2.php" class="btn">
+                    <a href="./app.php?key=apk2" class="btn">
                         <button class="mdui-btn mdui-btn-raised mdui-color-theme-accent ">适用模拟器、低版本系统</button>
                     </a>
                 </div>
@@ -385,7 +389,7 @@
                 <!-- PC下载 -->
                 <h2 class="mdui-typo-title mdui-m-t-4">电脑版下载</h2>
                 <div class="download-buttons mdui-m-t-2">
-                    <a href="./app4_window.php" class="btn">
+                    <a href="./app.php?key=window" class="btn">
                         <button class="mdui-btn mdui-btn-raised mdui-color-theme-accent ">window下载</button>
                     </a>
                     <a href="#" class="btn">
@@ -394,7 +398,7 @@
                 </div>
 
                 <!-- ios下载 -->
-                <h2 class="mdui-typo-title mdui-m-t-4">iOS 下载(需自签)</h2>
+                <h2 class="mdui-typo-title mdui-m-t-4">苹果手机 下载(需自签)</h2>
                 <p class="mdui-typo-body mdui-m-t-2 " style="color: rgba(255,255,255,.60)">
                     <span class="mdui-text-color-theme-accent">提示:</span> 签名可以试试
                     TrollStore2（永不掉签）、爱思助手（七天有效）、牛蛙助手（一键续签）、Scarlet（免费企业签）或 Apple ID +
@@ -402,7 +406,7 @@
                 </p>
                 <div class="download-buttons mdui-m-t-2">
 
-                    <a href="./app3_ipa.php" class="btn">
+                    <a href="./app.php?key=ios" class="btn">
                         <button class="mdui-btn mdui-btn-raised mdui-color-theme-accent ">线路1</button>
                     </a>
                     <a href="https://github.com/Carole007/midm-release/releases/download/2.3.2/Mi2.3.2.ipa" class="btn">
@@ -494,15 +498,15 @@
                     <p>如果安装时提示报毒，可以选择将本应用标记为可信任应用，或在断开网络的情况下完成安装。💬✨</p>
                 </div>
             </div>
-            
-             <div class="mdui-panel-item">
+
+            <div class="mdui-panel-item">
                 <div class="mdui-panel-item-header">
                     软件连接异常？
                     <i class="mdui-panel-item-arrow mdui-icon material-icons">expand_more</i>
                 </div>
                 <div class="mdui-panel-item-body">
                     <p>🚫 可检查版本是否最新，官网下载更新：midm1.com。部分地区可能会运营商拦截，可修改dns解决，腾讯dns：223.5.5.5
-阿里：119.29.29.29，或者开启加速器访问。</p>
+                        阿里：119.29.29.29，或者开启加速器访问。</p>
                 </div>
             </div>
 
@@ -706,7 +710,8 @@
                     <div class="mdui-timeline-item-content">
                         <div class="mdui-typo mdui-timeline-item-title mdui-text-color-theme">版本 2.3.2</div>
                         <div class="mdui-timeline-item-time mdui-text-color-grey">2025-2-21 00:31:00</div>
-                        <div class="mdui-timeline-item-text">v2.3.2 更新说明 🎉： 安卓恢复观看广告获取积分 💰，由于包名变更，安装最新版本后可能会看到多出一个软件，务必使用最新版，旧版往后可能无法使用 🚨；排行榜新增完结/连载筛选功能 🏆，同时进行了系统性能优化 ⚡</div>
+                        <div class="mdui-timeline-item-text">v2.3.2 更新说明 🎉： 安卓恢复观看广告获取积分
+                            💰，由于包名变更，安装最新版本后可能会看到多出一个软件，务必使用最新版，旧版往后可能无法使用 🚨；排行榜新增完结/连载筛选功能 🏆，同时进行了系统性能优化 ⚡</div>
                     </div>
                 </div>
             </div>
@@ -929,6 +934,15 @@
         <span data-v-b1a7823b="">Copyright © 2023-2025 Mi动漫 All Rights Reserved.</span>
     </div>
 
+    <!-- 公告通知 -->
+    <div class="mdui-dialog" id="dialog">
+        <div class="mdui-dialog-title">公告</div>
+        <div class="mdui-dialog-content">系统升级维护中，预计几个小时恢复。请耐心等待🌸 官网：midm.app ，TG群聊：midmgf 💬</div>
+        <div class="mdui-dialog-actions">
+            <button class="mdui-btn mdui-ripple" mdui-dialog-confirm>收到</button>
+        </div>
+    </div>
+
     <script>var _hmt = _hmt || []; !function () { var e = document.createElement("script"); e.referrerpolicy = "origin", e.src = "https://hm.baidu.com/hm.js?0beb914a8243aa811ee5c3364a4cd442"; var r = document.getElementsByTagName("script")[0]; r.parentNode.insertBefore(e, r) }();</script>
     <script>var _hmt = _hmt || []; !function () { var e = document.createElement("script"); e.src = "https://hm.baidu.com/hm.js?73291010701b4f253db69876613e045d"; var t = document.getElementsByTagName("script")[0]; t.parentNode.insertBefore(e, t) }();</script>
     <script>!function (t) { "use strict"; !function (e) { var r = window, c = document, s = t, a = "".concat("https:" === c.location.protocol ? "https://" : "http://", "sdk.51.la/js-sdk-pro.min.js"), n = c.createElement("script"), o = c.getElementsByTagName("script")[0]; n.type = "text/javascript", n.setAttribute("charset", "UTF-8"), n.async = !0, n.src = a, n.id = "LA_COLLECT", s.d = n; var i = function () { r.LA.ids.push(s) }; r.LA ? r.LA.ids && i() : (r.LA = t, r.LA.ids = [], i()), o.parentNode.insertBefore(n, o) }() }({ id: "3HHd43lfdc3syB3o", ck: "3HHd43lfdc3syB3o", hashMode: !0 });</script>
@@ -997,21 +1011,17 @@
         }
     </script>
     <script>
-        /* // 显示公告对话框的函数
+        const isShowDialog = false;
+        // 显示公告对话框的函数
         function showDialog() {
-            mdui.dialog({
-                title: '公告',
-                content: '欢迎使用本软件！感谢您的支持与反馈。如果您遇到任何问题，请随时联系我们。😊',
-                actions: [
-                    {
-                        text: '确定',
-                        onClick: function () {
-                            // 关闭对话框
-                            return true;
-                        }
-                    }
-                ]
-            });
+            if (isShowDialog) {
+                // 关闭按钮事件
+                let dialog = new mdui.Dialog('#dialog', {
+                    history: false
+                });
+                dialog.open();
+            }
+
         }
         // 检查mdui是否已加载，如果没有加载则动态引入
         if (!window.mdui) {
@@ -1024,7 +1034,7 @@
             document.body.appendChild(script);
         } else {
             showDialog(); // mdui 已加载，直接显示对话框
-        } */
+        } 
     </script>
 </body>
 
