@@ -1,0 +1,312 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 0.8s ease-in;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+::selection,
+::-moz-selection {
+  background: #ffc1c9;
+  color: #fff;
+}
+
+p {
+  line-height: 1.5;
+}
+
+body {
+  background-image: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  color: #fff;
+}
+
+.overlay1 {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -8;
+}
+
+.overlay2 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -8;
+  background-color: rgba(68, 68, 68, 0.4);
+  background-image: -webkit-linear-gradient(-410deg, rgba(68, 68, 68, 0.2) 20%, rgba(0, 0, 0, 0.4));
+  background-image: linear-gradient(140deg, rgba(68, 68, 68, 0.2) 20%, rgba(0, 0, 0, 0.4));
+}
+
+.overlay3 {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -7;
+  background-image: linear-gradient(155deg, rgba(28, 53, 103, 0.6) 0%, rgba(37, 72, 141, 0.8) 100%);
+  backdrop-filter: blur(5px);
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.app-logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: #acd5d245;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.app-logo img {
+  max-width: 80%;
+  border-radius: 50%;
+}
+
+.app-logo img:hover {
+  transform: rotate(666turn);
+  transition-delay: 1s;
+  transition-property: all;
+  transition-duration: 59s;
+  transition-timing-function: cubic-bezier(0.34, 0, 0.84, 1);
+}
+
+.download-title {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.download-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 13px;
+}
+
+.btn {
+  text-decoration: none;
+}
+
+.app-info {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.version {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #b3b3b3;
+}
+
+.ewm {
+  position: absolute;
+  top: 50px;
+  right: 100px;
+}
+
+.ewm p {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.ewm img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .ewm {
+    display: none;
+  }
+}
+
+/* 默认背景色 */
+.mdui-panel-item {
+  background-color: #1e3b7255;
+  /* 默认背景色 */
+  color: #e0e0e0;
+  /* 文字颜色 */
+  transition: background-color 0.3s;
+  /* 背景色变化时添加过渡效果 */
+}
+
+/* 点击时的背景色变化 */
+.mdui-panel-item .mdui-panel-item-header:active {
+  background-color: #3e57a337;
+  /* 点击时的背景色 */
+}
+
+.mdui-panel-item .mdui-panel-item-header {
+  color: white;
+}
+
+.mdui-panel-item .mdui-panel-item-body {
+  color: #e0e0e0;
+}
+
+.mdui-panel-item .mdui-panel-item-arrow {
+  color: white;
+}
+
+.mdui-timeline {
+  position: relative;
+  padding-left: 40px;
+  margin: 20px 0;
+}
+
+.mdui-timeline-item {
+  position: relative;
+  padding: 15px 0;
+}
+
+.mdui-timeline-item-header {
+  display: flex;
+  align-items: center;
+}
+
+.mdui-timeline-item-icon {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  left: -26px;
+  top: 0;
+  background-color: #ff4081;
+}
+
+.mdui-timeline-item-time {
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+.mdui-timeline-item-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.mdui-timeline-item-text {
+  margin-left: 20px;
+  color: #b0bec5;
+}
+
+.mdui-timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -20px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #e0e0e0;
+}
+
+/* 自定义对话框的背景色 */
+.mdui-dialog {
+  background-color: #1e3c72;
+  /* 比 body 色稍深 */
+  color: #fff;
+}
+
+.mdui-dialog-actions .mdui-btn {
+  background-color: #1e3c72;
+  /* 按钮背景色 */
+}
+
+.mdui-dialog-content {
+  color: #fff;
+}
+
+.mdui-dialog {
+  border-radius: 16px;
+  /* 设置圆角 */
+}
+
+.swiper {
+  width: 100%;
+  height: 400px;
+  margin: 20px 0;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.swiper-pagination-bullet {
+  background-color: #ccc;
+  /* 默认颜色 */
+  opacity: 0.7;
+  /* 默认透明度 */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ffc1c9;
+  /* 激活时的颜色 */
+  opacity: 1;
+  /* 激活时不透明 */
+}
+
+/* 设置左右切换按钮颜色和样式 */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ffc1c9;
+  /* 设置按钮颜色 */
+  background-color: rgba(255, 255, 255, 0.3);
+  /* 添加背景色和透明度 */
+  border-radius: 50%;
+  /* 圆形按钮 */
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 鼠标悬停时改变颜色 */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: #ffc1c9;
+  color: #fff;
+  /* 改变箭头颜色为白色 */
+}
+
+/* 隐藏默认箭头的背景 */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 16px;
+  /* 调整箭头大小 */
+  font-weight: bold;
+}
